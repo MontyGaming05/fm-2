@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: url('fm/help\ page.jpeg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .contact-section {
+    display: flex;
+    width: 100%;
+align-items: center;
+    height: 100vh;
+    padding: 2em;
+    background: rgba(0, 0, 0, 0.7);
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .contact-info, .contact-form {
+    flex: 1;
+    padding: 1em;
+  }
+  
+  .contact-info h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5em;
+  }
+  
+  .icon {
+    font-size: 1.5em;
+    margin-right: 0.5em;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.5em 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+    font-size: 1em;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    border-bottom-color: yellow;
+  }
+  
+  .contact-form button {
+    background: yellow;
+    color: #333;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-form button:hover {
+    background: #e6b800;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  @media (max-width: 768px) {
+    .contact-section {
+      flex-direction: column;
+    }
+  }
+  

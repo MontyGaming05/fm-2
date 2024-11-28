@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="Contact.css">
+</head>
+<body>
+
+  <section class="contact-section">
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <div class="info-item">
+        <i class="icon phone-icon">📞</i>
+        <p><strong>Call Us:</strong> 8890906966</p>
+      </div>
+      <div class="info-item">
+        <i class="icon location-icon">📍</i>
+        <p><strong>Location:</strong><br>ISI-6, RIICO Institutional Area,<br> Sitapura, Poornima Marg, Sitapura,<br> Jaipur, Rajasthan 302022, India</p>
+      </div>
+      <div class="info-item">
+        <i class="icon hours-icon">⏰</i>
+        <p><strong>Business Hours:</strong><br>
+          <strong>Mon:</strong> 9am–5pm<br>
+          <strong>Tue:</strong> 9am–5pm<br>
+          <strong>Wed:</strong> 9am–5pm<br>
+          <strong>Thu:</strong> 9am–5pm<br>
+          <strong>Fri:</strong> 9am–5pm<br>
+          <strong>Sat:</strong> Closed<br>
+          <strong>Sun:</strong> Closed
+        </p>
+      </div>
+      
+    </div>
+    
+    <div class="contact-form">
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="address" placeholder="Address" required>
+        <textarea id="message" placeholder="Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();  // Prevent form from submitting in the usual way
+
+    // Collect the form data
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const address = document.getElementById('address').value;
+    const message = document.getElementById('message').value;
+
+    // Format the message content to be sent
+    const messageContent = `Name: ${name}\nEmail: ${email}\nAddress: ${address}\nMessage: ${message}`;
+
+    // Construct a WhatsApp URL (or phone number URL)
+    const phoneNumber = '8890906966';
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(messageContent)}`;
+
+    // Redirect to the WhatsApp link (this could also be a normal phone link like "tel:" if you prefer)
+    window.location.href = url;
+});
+
+  </script>
+</body>
+</html>

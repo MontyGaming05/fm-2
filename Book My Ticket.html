@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Ticket Booking</title>
+    <link rel="stylesheet" href="bookticket.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="heading">Event Ticket Booking</h2>
+        <form id="ticketForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required><br>
+
+            <label for="batch">Batch:</label>
+            <input type="text" id="batch" name="batch" required><br>
+
+            <label for="eventName">Event Name:</label>
+            <select id="eventName" name="eventName" required>
+                <option value="" selected>Select Event</option>
+                <option value="Music Fest">Music Fest</option>
+                <option value="Tech Conference">Tech Conference</option>
+                <option value="Art Show">Art Show</option>
+                <option value="College Fest">College Fest</option>
+                <option value="Hackathon">Hackathon</option>
+                <option value="Coding Competition">Coding Competition</option>
+                <option value="Cultural Meet">Cultural Meet</option>
+                <option value="Holi Celebration">Holi Celebration</option>
+                <option value="Sports Day">Sports Day</option>
+                <option value="Freshers Party">Freshers Party</option>
+                <option value="Alumni Meet">Alumni Meet</option>
+                <option value="Annual Day">Annual Day</option>
+            </select><br>
+            
+            <label for="price">Price:</label>
+            <select id="price" name="price" required>
+                <option value="" selected>Select Price</option>
+                <option value="₹100">VIP - ₹100</option>
+                <option value="₹50">Regular - ₹50</option>
+                <option value="₹20">Economy - ₹20</option>
+            </select>
+            
+            <br>
+
+            <label for="location">Event Location:</label>
+            <input type="text" id="location" name="location" required><br>
+
+            <button type="button" onclick="generateTicketJPG()">Book Ticket</button>
+        </form>
+    </div>
+    
+    <script src="bookticket.js"></script>
+</body>
+</html>

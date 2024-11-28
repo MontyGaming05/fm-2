@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+ <!-- header seaction   -->
+   
+    
+
+<section class="mainseaction">
+
+    <div class="container" >
+
+
+        <header>
+            <div class="logo">
+              <img src="fm/fm_logo_-removebg-preview.png" alt=""  class="logoimg">
+            </div>
+            <nav>
+              <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="/Book My Ticket.html">Ticket</a></li>
+                <li><a href="#Testimonial">Testimonial</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+              </ul>
+              <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </nav>
+        </header>
+    
+        
+
+
+
+
+
+            <div class="item" style="background-image: url(fm/collage\ events.jpg);" >
+                <div class="content">
+                    <div class="name">collage event</div>
+                    <div class="des"><p>Bringing students together for moments that matter.</p>
+                    </div>
+                    <button>see more</button>
+
+                </div>
+            </div>
+            <div class="item" style="background-image: url(fm/hackthon\ event.jpg);">
+                <div class="content">
+                    <div class="name">hackthon events</div>
+                    <div class="des"><p>Turn coffee into code, ideas into impact, and dreams into reality.</p>
+                    </div>
+                    <button>see more</button>
+
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(fm/farwell\ party.jpg);">
+                <div class="content">
+                    <div class="name"> Farewell party</div>
+                    <div class="des"><p>Celebrating memories and friendships as we bid farewell.</p>
+                    </div>
+                    <button>see more</button>
+
+                </div>
+            </div>
+
+
+            <div class="item" style="background-image: url(fm/sports\ day.jpg);">
+                <div class="content">
+                    <div class="name">Sports Day</div>
+                    <div class="des"><p>Get ready to play, cheer, and celebrate the power of sportsmanship.</p>
+                    </div>
+                    <button>see more</button>
+
+                </div>
+            </div>
+
+
+            <div class="item" style="background-image: url(fm/seminar\ photo.png);">
+                <div class="content">
+                    <div class="name">Seminar & Workshops</div>
+                    <div class="des"><p><p>Engaging sessions to enhance skills and inspire innovation.</p>
+                    </p>
+                    </div>
+                    <button>see more</button>
+
+                </div>
+            </div>
+
+
+            
+        <div class="slide">
+            <div class="item"  style="background-image: url(fm/birthday\ party.png);">
+                <div class="content">
+                    <div class="name">Birthday Party </div>
+                    <div class="des"><p>Creating unforgettable birthday memories, one smile at a time.</p>
+                    </div>
+                    <button>see more</button>
+                </div>
+            </div>
+
+
+
+            <div class="item" style="background-image: url(fm/fashion\ show.webp);">
+                <div class="content">
+                    <div class="name">Fashion Show</div>
+                    <div class="des"><p><p>A dazzling showcase of elegance, innovation, and bold style.</p>
+                    </p>
+                    </div>
+                    <button>see more</button>
+
+                </div>
+            </div>
+
+
+
+            <div class="item" style="background-image: url(fm/photoghar\ constant.jpg);">
+                <div class="content">
+                    <div class="name">Photography Contest </div>
+                    <div class="des"><p><p>Unleash your inner artist and capture moments that inspire.</p>
+                    </p>
+                    </div>
+                    <button>see more</button>
+
+                </div>
+            </div>
+
+
+        </div>
+
+<div class="button">
+    <button class="prev"><i class="fa-solid fa-arrow-left-long"></i></button>
+    <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+</div>
+
+    </div>
+
+</section>
+
+<section id="cta-section">
+    <div class="cta-content">
+        <h2>Ready to Book Your Event Ticket?</h2>
+        <p>Join us for an unforgettable experience! Book your ticket now and be a part of the celebration.</p>
+        <a href="/Book My Ticket.html">
+            <button id="book-ticket-btn">Book Ticket</button>
+          </a>
+          
+
+    </div>
+    <div class="cta-image">
+        <img src="fm/book_ticket-removebg-preview.png" alt="Event Preview">
+    </div>
+</section>
+
+
+
+<section>
+
+
+
+    <!-- Event Gallery Section -->
+<div class="event-gallery">
+    <h2>Event Gallery</h2>
+    <div class="slider-container">
+        <div class="slider" id="slider">
+            <!-- Slider Images -->
+            <div class="gallery-item">
+                <img src="fm/collage events.jpeg" alt="Event 1" onclick="openLightbox(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="fm/collage events.jpg" alt="Event 2" onclick="openLightbox(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="fm/collage events 2.jpg" alt="Event 3" onclick="openLightbox(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="fm/collage events 3.jpeg" alt="Event 4" onclick="openLightbox(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="fm/collage events 5.jpg" alt="Event 5" onclick="openLightbox(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="fm/collage events.jpeg" alt="Event 6" onclick="openLightbox(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="fm/collage program 1.jpg" alt="Event 7" onclick="openLightbox(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="fm/farwell party.jpg" alt="Event 8" onclick="openLightbox(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="fm/hackthon event.jpg" alt="Event 9" onclick="openLightbox(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="fm/sports day.jpg" alt="Event 10" onclick="openLightbox(this.src)">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Lightbox for enlarged view -->
+<div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <img id="lightboxImg" class="lightbox-img" src="" alt="Lightbox Image">
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- Testimonials Slider Section -->
+<section class="testimonials-slider-section"  id="Testimonial">
+    <h2>What People Say About Us</h2>
+    <div class="slider-container">
+      <div class="testimonial-slide active">
+        <img src="fm/people.jpg" alt="Indian - College Teacher">
+        <h3>Indian</h3>
+        <p class="role">College Teacher</p>
+        <p class="testimonial-text">"The organization and event management were truly professional. Every detail was handled beautifully!"</p>
+      </div>
+  
+      <div class="testimonial-slide">
+        <img src="fm/people 1.jpg" alt="Indian - Director">
+        <h3>Indian</h3>
+        <p class="role">Director</p>
+        <p class="testimonial-text">"A fantastic experience! The team executed everything seamlessly, making the event a huge success."</p>
+      </div>
+  
+      <div class="testimonial-slide">
+        <img src="fm/people 3.jpg" alt="Indian - Chief Guest">
+        <h3>Indian</h3>
+        <p class="role">Chief Guest</p>
+        <p class="testimonial-text">"I was impressed by the hospitality and the smooth flow of the event. Kudos to the team for their efforts!"</p>
+      </div>
+  
+      <div class="testimonial-slide">
+        <img src="fm/man.jpg" alt="Indian - Audience Member">
+        <h3>Audience </h3>
+        <p class="role">Audience Member</p>
+        <p class="testimonial-text">"As an attendee, I thoroughly enjoyed the event. The arrangements were excellent and the experience unforgettable!"</p>
+      </div>
+    </div>
+  
+    <!-- Dot Navigation -->
+    <div class="dot-navigation">
+      <span class="dot active" data-slide="0"></span>
+      <span class="dot" data-slide="1"></span>
+      <span class="dot" data-slide="2"></span>
+      <span class="dot" data-slide="3"></span>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <div class="footer-content">
+        <h2>Function maneger</h2>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href=""https://www.instagram.com/><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="footer-links">
+            <<a href="#home">Home</a>
+            <<a href="#events">Events</a>
+            <a href="/Book My Ticket.html">Ticket</a>
+            <a href="#Testimonial">Testimonial</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+        <p>©2024 FM | All Rights Reserved</p>
+    </div>
+</footer>
+      
+    <script src="script.js"></script>
+</body>
+</html>
